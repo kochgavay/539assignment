@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email check</title>
+	<script type="text/javascript" src="emailcheck.js"></script>
+	<style>
+	label{
+		display:block;
+		padding:10px 0px;
+	}
+	input, textarea{
+		position: absolute;
+		left: 150px;
+	}
+</style>
+</head>
+<body>
+	<form action = "thankyou.html" onsubmit="return check(this)">
+		<label>Email: <input type = "email" name="e1" id = "e1" value = "a@a.com"></label>
+
+		<label>Email confirm: <input type = "email" name="e2" id="e2" onchange="check2(this, e1)"></label>
+
+		<label>Comments: <textarea name="comments" id="com" placeholder="Enter Comments Here"></textarea></label>
+		<input type = "submit" value = "Submit your info!">
+
+	</form>
+</body>
+</html>
